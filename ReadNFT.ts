@@ -19,4 +19,16 @@ async function NFTOwner() {
   console.log(`The owner of NFT ${tokenId} is ${owner}`);
 }
 
+async function NFTMetadata() {
+  const metadata = await client.readContract({
+    address,
+    abi,
+    functionName: "tokenURI",
+    args: [BigInt(tokenId)],
+  });
+
+  console.log(`The metadata of NFT ${tokenId} is ${metadata}`);
+}
+
 NFTOwner();
+NFTMetadata();
