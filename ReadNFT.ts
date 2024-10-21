@@ -18,3 +18,5 @@ async function NFTOwner() {
 
   console.log(`The owner of NFT ${tokenId} is ${owner}`);
 }
+
+NFTOwner();
