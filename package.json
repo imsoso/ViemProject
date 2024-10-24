@@ -1,17 +1,17 @@
 {
   "name": "viem-scripts",
   "version": "1.0.0",
-  "main": "readNFT.ts",
+  "main": "decodeCalldata.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node readNFT.ts"
+    "start": "ts-node decodeCalldata.ts"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "dotenv": "^16.4.5",
-    "viem": "^2.21.31"
+    "viem": "^2.21.34"
   },
   "devDependencies": {
     "@types/node": "^22.7.7",
