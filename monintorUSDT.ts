@@ -12,7 +12,8 @@ const client = createPublicClient({
 
 async function SubscribeNewBlock() {
   const unwatch = client.watchBlocks({
-    onBlock: (block) => console.log(block),
+    onBlock: (block) =>
+      console.log(`New block: ${block.number} (${block.hash})`),
   });
 }
 
